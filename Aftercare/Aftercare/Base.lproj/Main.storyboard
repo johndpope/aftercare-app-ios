@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MasterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MasterViewController" customModule="Aftercare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="145.27736131934034"/>
+        </scene>
+        <!--Welcome Screen View Controller-->
+        <scene sceneID="Th5-D8-g5x">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ciT-pU-S9D" customClass="WelcomeScreenViewController" customModule="Aftercare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uhe-53-R7p"/>
+                        <viewControllerLayoutGuide type="bottom" id="6vh-EC-gg6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HH1-cr-COR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome-shape" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-7l-jFP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-container" translatesAutoresizingMaskIntoConstraints="NO" id="R18-J4-p6v">
+                                <rect key="frame" x="94" y="240" width="187" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="mvy-f0-5gm"/>
+                                    <constraint firstAttribute="width" secondItem="R18-J4-p6v" secondAttribute="height" multiplier="1:1" id="v2Y-Uf-May"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDP-vz-hYy">
+                                <rect key="frame" x="16" y="467" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mmr-RA-jIM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHC-TW-x8t">
+                                <rect key="frame" x="16" y="123" width="343.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ik9-GQ-4ak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dDP-vz-hYy" secondAttribute="trailing" id="7ko-gA-agf"/>
+                            <constraint firstItem="6vh-EC-gg6" firstAttribute="top" secondItem="c6t-7l-jFP" secondAttribute="bottom" id="EoF-CC-TSo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WHC-TW-x8t" secondAttribute="trailing" id="JKg-Dx-y9W"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dDP-vz-hYy" secondAttribute="leading" id="M2c-dV-Jf0"/>
+                            <constraint firstItem="R18-J4-p6v" firstAttribute="centerX" secondItem="c6t-7l-jFP" secondAttribute="centerX" id="Mxb-yP-oap"/>
+                            <constraint firstItem="c6t-7l-jFP" firstAttribute="leading" secondItem="HH1-cr-COR" secondAttribute="leading" id="UNA-Pq-oQ2"/>
+                            <constraint firstItem="WHC-TW-x8t" firstAttribute="top" secondItem="c6t-7l-jFP" secondAttribute="top" constant="123" id="XJy-1g-OFh"/>
+                            <constraint firstItem="WHC-TW-x8t" firstAttribute="leading" secondItem="HH1-cr-COR" secondAttribute="leadingMargin" id="XV1-mg-PUh"/>
+                            <constraint firstItem="c6t-7l-jFP" firstAttribute="top" secondItem="uhe-53-R7p" secondAttribute="bottom" id="adi-4t-Voy"/>
+                            <constraint firstAttribute="trailing" secondItem="c6t-7l-jFP" secondAttribute="trailing" id="gMr-Tw-WfQ"/>
+                            <constraint firstItem="R18-J4-p6v" firstAttribute="centerY" secondItem="c6t-7l-jFP" secondAttribute="centerY" id="i1a-Xo-oAf"/>
+                            <constraint firstItem="dDP-vz-hYy" firstAttribute="top" secondItem="R18-J4-p6v" secondAttribute="bottom" constant="40" id="pPn-0S-a2b"/>
+                            <constraint firstItem="dDP-vz-hYy" firstAttribute="centerX" secondItem="c6t-7l-jFP" secondAttribute="centerX" id="pmd-5j-B1f"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HvM-gi-P5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="147.97601199400302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar-container" width="187" height="187"/>
+        <image name="welcome-shape" width="375" height="667"/>
+    </resources>
+</document>
